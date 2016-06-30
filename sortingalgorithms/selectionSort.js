@@ -6,17 +6,24 @@
  **/
 function selectionSort() {
   function sort(arr) {
+    for(var i = 0; i < arr.length; i++) {
+      if(typeof arr[i] !== 'number') {
+        throw new Error('Invalid element in array.');
+      }
+    }
     var ans = [];
+    var arrays = [];
     while(arr.length !== 0) {
       var smallestValue = arr[0];
-      for(var i = 0; i < arr.length; i++) {
+      for(i = 0; i < arr.length; i++) {
         if(arr[i] < smallestValue) {
           smallestValue = arr[i];
         }
       }
-
       ans.push(Number(arr.splice(arr.indexOf(smallestValue),1).toString()));
+      arrays.push(ans.slice());
     }
+    updateCanvas(arrays);
     return ans;
   }
   return {

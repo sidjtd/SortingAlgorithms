@@ -8,23 +8,35 @@
  **/
 function insertionSort() {
   function sort(arr) {
+    for(var i = 0; i < arr.length; i++) {
+      if(typeof arr[i] !== 'number') {
+        throw new Error('Invalid element in array.');
+      }
+    }
     var ans = [arr.shift()];
+    var arrays = [ans.slice()];
     var arrLength = arr.length;
-    for(var i = 0; i < arrLength; i++) {
+    for(i = 0; i < arrLength; i++) {
       if(arr[0] >= ans[ans.length - 1]){
         ans.push(arr.shift());
+        arrays.push(ans.slice());
+
       } else if(arr[0] < ans[ans.length - 1] && arr[0] > ans[0]) {
         for(var j = 0; j < ans.length; j++) {
           if(ans[j] < arr[0] && ans[j + 1] > arr[0]) {
             ans.splice(j + 1,0,arr.shift());
+            arrays.push(ans.slice());
           }
         }
       } else {
         if(arr[0] !== undefined) {
           ans.unshift(arr.shift());
+          arrays.push(ans.slice());
         }
       }
     }
+    console.log(arrays);
+    updateCanvas(arrays);
     return ans;
   }
   return {
