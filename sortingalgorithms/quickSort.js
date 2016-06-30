@@ -49,5 +49,5 @@ function quickSort() {
     QuickSort: sort,
   };
 }
-// console.log(quickSort().QuickSort([5,1,2,3,4]));
+console.log(quickSort().QuickSort([5,1,2,3,4]));
 module.exports = quickSort;

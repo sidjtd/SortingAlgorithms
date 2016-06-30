@@ -3,12 +3,12 @@ var mocha = require('mocha');
 
 var expect = chai.expect;
 chai.should();
-var bubbleSort = require('./../bubbleSort.js');
-var insertionSort = require('./../insertionSort.js');
-var mergeSort = require('./../mergeSort.js');
-var quickSort = require('./../quickSort.js');
-var selectionSort = require('./../selectionSort.js');
-var updateCanvas = require('./../updateCanvas.js');
+var bubbleSort = require('./../sortingalgorithms/bubbleSort.js');
+var insertionSort = require('./../sortingalgorithms/insertionSort.js');
+var mergeSort = require('./../sortingalgorithms/mergeSort.js');
+var quickSort = require('./../sortingalgorithms/quickSort.js');
+var selectionSort = require('./../sortingalgorithms/selectionSort.js');
+var updateCanvas = require('./../canvas/updateCanvas.js');
 describe('Testing the BubbleSorting algorithm.', function () {
   it('Should return the sorted array.', function() {
     expect(bubbleSort().BubbleSort([1,8,5,2])).to.deep.equal([1,2,5,8]);
