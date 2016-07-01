@@ -1,6 +1,6 @@
 # SortingAlgorithms
-https://gist.github.com/jaywon/7b03aa19e53852d090fe
-/
+Specifications for this assignment: https://gist.github.com/jaywon/7b03aa19e53852d090fe
+
 #Bubble Sort
 Bubble Sort compares two indexes, and swaps them. This continues until no swaps are performed through an interation of the array.
 
