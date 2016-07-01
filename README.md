@@ -14,7 +14,6 @@ Worst Case Scenario would be that all the indexes of the array are completely in
 
 
     Declare a function.
-      
       Takes the array to be sorted as a parameter.
   
       Initiate an Array.
