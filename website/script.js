@@ -18,14 +18,19 @@ window.onload = function(){
 var yourArray = [];
 function addToArray() {
   var value = document.getElementById('number').value;
-  if(!value) {
+  value = parseFloat(value);
+  if(!value || isNaN(value)) {
     return;
   }
-  yourArray.push(Number(value));
+  yourArray.push(value);
   document.getElementById('number').value = '';
-  document.getElementById('yourArray').innerHTML = yourArray;
+  updateArray();
 }
 function clearArray() {
   yourArray = [];
+  updateArray();
+}
+
+function updateArray() {
   document.getElementById('yourArray').innerHTML = yourArray;
 }
