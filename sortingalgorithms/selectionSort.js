@@ -23,6 +23,7 @@ function selectionSort() {
       ans.push(Number(arr.splice(arr.indexOf(smallestValue),1).toString()));
       arrays.push(ans.slice());
     }
+    arrays.push(ans.slice());
     updateCanvas(arrays);
     return ans;
   }

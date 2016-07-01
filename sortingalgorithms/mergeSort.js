@@ -45,6 +45,7 @@ function mergeSort() {
     }
     arrays.push(c.slice());
     if(c.length === arrLength) {
+      arrays.push(c.slice());
       updateCanvas(arrays);
     }
     return c;

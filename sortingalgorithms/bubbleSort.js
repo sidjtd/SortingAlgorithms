@@ -10,6 +10,7 @@
 function bubbleSort() {
   function sort(arr) {
     for(var i = 0; i < arr.length; i++) {
+      arr[i] = Number(arr[i]);
       if(typeof arr[i] !== 'number') {
         throw new Error('Invalid element in array.');
       }

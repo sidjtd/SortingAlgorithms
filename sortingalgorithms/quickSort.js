@@ -41,7 +41,6 @@ function quickSort() {
       return e !== undefined;
     });
     arrays.push(answer.slice());
-    console.log(arrays);
     updateCanvas(arrays);
     return answer;
   }
@@ -49,5 +48,4 @@ function quickSort() {
     QuickSort: sort,
   };
 }
-console.log(quickSort().QuickSort([5,2,3,1,4]));
 module.exports = quickSort;
