@@ -3,9 +3,15 @@ Specifications for this assignment: https://gist.github.com/jaywon/7b03aa19e5385
 
 Viewing the Data Visualization
 
+    git clone https://github.com/Viltaria/SortingAlgorithms.git
+    
+    Navigate into this repository.
+
     http-server
     
-    navigate into website 
+    Ctrl + Click on the link in terminal
+    
+    Navigate into website
     
 #Bubble Sort
 Bubble Sort compares two indexes and swaps them if the one closer to the beginning of the array is greater than the one closest to the end of the array. This continues until no swaps are performed through an interation of the array.
