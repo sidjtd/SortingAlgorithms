@@ -37,7 +37,6 @@ Worst Case Scenario would be that all the indexes of the array are completely in
          Swap the values of the indexes.
          
       End loop if ending condition is met.
-    
     End function.
   
 #Insertion Sort
