@@ -4,6 +4,15 @@ Specifications for this assignment: https://gist.github.com/jaywon/7b03aa19e5385
 #Bubble Sort
 Bubble Sort compares two indexes and swaps them if the one closer to the beginning of the array is greater than the one closest to the end of the array. This continues until no swaps are performed through an interation of the array.
 
+Best Case Scenario for this type of sorting method would be that all the indexes of the array are in order. 
+
+>O(n)
+
+Worst Case Scenario would be that all the indexes of the array are completely in the opposite order.
+
+>O(n^2)
+
+
     Declare a function.
       
       Takes the array to be sorted as a parameter.
@@ -22,7 +31,15 @@ Bubble Sort compares two indexes and swaps them if the one closer to the beginni
     End function.
   
 #Insertion Sort
-Insertion sort inserts the values of the original array into a new array, putting it in its right place.
+Insertion sort inserts the values of the original array into itself, putting it in its right place.
+
+Best Case for this type of sorting method would be that it is in order.
+
+>O(n)
+
+Worst Case would be that it is in the exact opposite order.
+
+>O(n^2)
 
     Declare a function.
       Takes the array to be sorted as a parameter.
@@ -45,7 +62,15 @@ Insertion sort inserts the values of the original array into a new array, puttin
       End function.
   
 #Merge Sort
-Merge Sort splits the origin array into two separate arrays until there is only one element in the arrays, and puts them back into a new Array while comparing them to each other. 
+Merge Sort splits the original array into two separate arrays until there is only one element in the arrays, and puts them back into a new Array while comparing them to each other. 
+
+Best Case: None.
+
+>O(n log(n))
+
+Worst Case: None or that would be that there are too many indexes in the array passed in, taking a long time to reach only one index.
+
+>O(n log(n))
 
     Declare two functions, one will split the values, and the other will compare them while merging them together.
     
@@ -102,6 +127,14 @@ Merge Sort splits the origin array into two separate arrays until there is only 
 #QuickSort
 Quick Sort creates a 'Pivot' point, and splits the original array into two arrays, with one being all the numbers less than the pivot point, and the other being all the numbers greater than it, and returns them if arrays have only one element.
 
+Best Case for this type of sorting method would be that the 'Pivot' point would be exactly in the middle of the array to be split every time.
+
+>O(n log(n))
+
+Worst Case would be that the pivot would always be the highest or lowest value consistently in the array, decrementing the array by only one value each time.
+
+>O(n^2)
+
     Declare a function.
       Takes the array to be sorted as a parameter.
       
@@ -136,6 +169,14 @@ Quick Sort creates a 'Pivot' point, and splits the original array into two array
     
 #Selection Sort
 Selection Sort takes the smallest value on the original array and pushes it into a new Array, and continues looping until there are no values left in the original array.
+
+Best Case: None. It must iterate through all the indexes in the original array.
+
+>O(n^2)
+
+Worst Case: None. It must iterate through all the inedxes in the original array.
+
+>O(n^2)
 
     Declare a function.
       Takes the array to be sorted as a parameter.
