@@ -30,15 +30,14 @@ Worst Case Scenario would be that all the indexes of the array are completely in
   
       Initiate an Array.
     
-      Loop through the Array.
+      Loop through the Array, with the ending condition being that no swaps are performed.
     
        IF the current index is less than next index.
        
          Swap the values of the indexes.
          
-         break out the loop IF
-         
-          index is NaN OR no swaps are performed.
+      End loop if ending condition is met.
+    
     End function.
   
 #Insertion Sort
