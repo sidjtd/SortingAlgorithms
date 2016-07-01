@@ -1,6 +1,12 @@
 # SortingAlgorithms
 Specifications for this assignment: https://gist.github.com/jaywon/7b03aa19e53852d090fe
 
+Viewing the Data Visualization
+
+    http-server
+    
+    navigate into website 
+    
 #Bubble Sort
 Bubble Sort compares two indexes and swaps them if the one closer to the beginning of the array is greater than the one closest to the end of the array. This continues until no swaps are performed through an interation of the array.
 
