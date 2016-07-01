@@ -1,7 +1,7 @@
-# SortingAlgorithms
+# Sorting Algorithms
 Specifications for this assignment: https://gist.github.com/jaywon/7b03aa19e53852d090fe
 
-Viewing the Data Visualization
+**Viewing the Data Visualization**
 ```
 git clone https://github.com/Viltaria/SortingAlgorithms.git
 
