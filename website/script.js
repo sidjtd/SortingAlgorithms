@@ -25,3 +25,7 @@ function addToArray() {
   document.getElementById('number').value = '';
   document.getElementById('yourArray').innerHTML = yourArray;
 }
+function clearArray() {
+  yourArray = [];
+  document.getElementById('yourArray').innerHTML = yourArray;
+}
