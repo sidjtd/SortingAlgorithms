@@ -45,14 +45,12 @@ function mergeSort() {
     }
     arrays.push(c.slice());
     if(c.length === arrLength) {
-      // updateCanvas(arrays);
+      updateCanvas(arrays);
     }
-    console.log(c);
     return c;
   }
   return {
     MergeSort: sort,
   };
 }
-console.log(mergeSort().MergeSort([1,5,2]));
 module.exports = mergeSort;
