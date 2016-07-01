@@ -15,8 +15,6 @@ window.onload = function(){
     selectionSort().SelectionSort(yourArray);
   });
 };
-
-
 var yourArray = [];
 function addToArray() {
   var value = document.getElementById('number').value;
@@ -26,8 +24,4 @@ function addToArray() {
   yourArray.push(Number(value));
   document.getElementById('number').value = '';
   document.getElementById('yourArray').innerHTML = yourArray;
-}
-
-function drawOnCanvas() {
-
 }
