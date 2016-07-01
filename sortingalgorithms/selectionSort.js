@@ -6,6 +6,10 @@
  **/
 function selectionSort() {
   function sort(arr) {
+    var a = arr.slice();
+    return sorter(a);
+  }
+  function sorter(arr) {
     for(var i = 0; i < arr.length; i++) {
       if(typeof arr[i] !== 'number') {
         throw new Error('Invalid element in array.');

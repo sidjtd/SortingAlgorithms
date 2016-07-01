@@ -8,7 +8,8 @@
    *      index is not a valid input OR no swaps are performed
 **/
 function bubbleSort() {
-  function sort(arr) {
+  function sort(a) {
+    var arr = a.slice();
     for(var i = 0; i < arr.length; i++) {
       arr[i] = Number(arr[i]);
       if(typeof arr[i] !== 'number') {

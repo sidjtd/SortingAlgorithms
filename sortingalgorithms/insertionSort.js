@@ -8,6 +8,10 @@
  **/
 function insertionSort() {
   function sort(arr) {
+    var a = arr.slice();
+    return sorter(a);
+  }
+  function sorter(arr) {
     for(var i = 0; i < arr.length; i++) {
       arr[i] = Number(arr[i]);
       if(typeof arr[i] !== 'number') {
@@ -36,7 +40,6 @@ function insertionSort() {
         }
       }
     }
-    console.log(arrays);
     updateCanvas(arrays);
     return ans;
   }

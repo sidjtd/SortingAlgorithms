@@ -7,6 +7,10 @@
    */
 function quickSort() {
   var arrays = [];
+  function sort(arr) {
+    var a = arr.slice();
+    return sorter(a);
+  }
   function doQuickSort(array) {
     var left = [], right = [];
     if(array.length <= 1) {
@@ -24,7 +28,7 @@ function quickSort() {
     arrays.push(ans.slice());
     return ans;
   }
-  function sort(a,b,c) {
+  function sorter(a) {
     for(var i = 0; i < a.length; i++) {
       if(typeof a[i] !== 'number') {
         throw new Error('Invalid element in array.');
@@ -36,7 +40,7 @@ function quickSort() {
     if(a.length === 1) {
       return a;
     }
-    var answer = doQuickSort(a,b,c);
+    var answer = doQuickSort(a);
     answer = answer.filter(function(e) {
       return e !== undefined;
     });

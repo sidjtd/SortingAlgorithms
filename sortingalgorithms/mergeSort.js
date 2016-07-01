@@ -8,6 +8,11 @@ function mergeSort() {
   var arrays = [];
   var arrLength;
   function sort(arr) {
+    var a = arr.slice();
+    return sorter(a);
+  }
+
+  function sorter(arr) {
     if(arrLength === undefined) {
       arrLength = arr.length;
     }
