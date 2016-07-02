@@ -3,6 +3,8 @@ Specifications for this assignment: https://gist.github.com/jaywon/7b03aa19e5385
 
 **Viewing the Data Visualization**
 ```
+npm i -g http-server
+
 git clone https://github.com/Viltaria/SortingAlgorithms.git
 
 Navigate into this repository.
